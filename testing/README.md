@@ -48,3 +48,6 @@ Runs use `reduced_motion: reduce` for deterministic screenshots. That also catch
 ## Proof runs (27 Oct 2026, see `runs/`)
 - `runs/kit`: this repo's gallery and all 19 demos × 3 viewports. The first run found 9 real issues (newsletter form unwired, two 390px overflows) and they're fixed. The final run has 0 failures.
 - `runs/bw`: the BuildIT site (`/workspace/bw`, 16 pages × 3 viewports). 10 failures, all `cta_above_fold` at 390px: the header CTA collapses into the mobile menu, so no CTA is visible on first load. The original build was left unchanged.
+
+## Fold check (added 28 Oct 2026)
+`python3 testing/fold_check.py [base_url] [shots_dir]` asserts the hero CTAs bottom <= window height - 24px (and >= 24px above the mobile sticky bar) at 1440x700, 1366x768, 1280x720, 1280x800, 1536x864, 1920x1080, 390x844, 375x667, with motion on and off.
