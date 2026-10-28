@@ -1,0 +1,3 @@
+{"base_url":"http://127.0.0.1:8111","pages":["/","/book/","/ig/","/book/?mode=mobile&pc=2096"],
+"viewports":[[1366,768],[1280,800],[390,844]],"cta_selector":"a.btn, button.btn, [data-cta]","require_tel_mailto":true,
+"check_external_links":false,"ignore_console":["favicon"],"min_contrast":4.5,"diff_threshold":0.02,"settle_ms":800,"out_dir":"testing/runs/dev"}
